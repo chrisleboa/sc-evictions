@@ -1,0 +1,37 @@
+---
+title: "EDA of South Carolina Evictions"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## GitHub Documents
+
+This is an R Markdown format used for publishing markdown documents to GitHub. When you click the **Knit** button all R code chunks are run and a markdown file (.md) suitable for publishing to GitHub is generated.
+
+##Basic EDA of Cities Eviction Data
+
+```{r Load Packages}
+library(tidyverse)
+```
+
+
+```{r Parameters}
+file_path_cities <- here::here("data/sc_cities_2016.rds")
+```
+
+```{r Create Tibbles}
+cities <- read_rds(file_path_cities)
+```
+
+
+##Find place with most evictions in 2016
+```{r}
+cities %>% 
+  arrange(desc(evictions))
+```
+North Charleston was the city with the higest rate of evictions in 2016. There
+were 3660 eviction judgements in North Charleston where renters were ordered to 
+leave in 2016. 

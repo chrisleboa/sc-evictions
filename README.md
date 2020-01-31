@@ -10,6 +10,9 @@ I wanted to do more work on it but because "usethis" package wasnt installed on 
     So i couldn't scream into the void about how sad this made me. But it made me sad 
     and unproductive
     
+    Sarah saved me and now i can work again 
+    
+    today I learned it is bad to have a .git folder in my home directory 
 
 
 * To create a repo that is a copy, log into GitHub and use the green _Use this template_ button.
